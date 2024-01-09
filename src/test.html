@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000;
+      perspective: 500px; /* Adjust the perspective value as needed */
+    }
+
+    .sphere {
+      width: 200px;
+      height: 200px;
+      background: conic-gradient(
+        from 0deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        violet,
+        red
+      );
+      border-radius: 50%;
+      /* animation: rotate 10s linear infinite; Adjust the animation duration as needed */
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotateY(0deg) rotateX(0deg);
+      }
+      to {
+        transform: rotateY(360deg) rotateX(360deg);
+      }
+    }
+  </style>
+  <title>Colored Sphere with Animation</title>
+</head>
+<body>
+  <div class="sphere"></div>
+</body>
+</html>
